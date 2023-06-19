@@ -45,8 +45,12 @@ int main() {
 		while (getline(infile, baris))
 		{
 			//dan tampilkan disini
-			cout << baris << \n;
+			cout << baris << '\n';
 		}
+		// Tutup file tersebut stelah selesai
+		infile.close();
 	}
-	
+	// Jika tidak ditemukan file maka akan menampilkan ini
+	else cout << "Unable to open file";
+	return 0;
 }
